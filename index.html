@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>멈춤의 미학</title>
+	<style type="text/css">
+		@font-face {
+    font-family: 'Hahmlet-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		body{
+			background: #060611;
+			margin: 0 auto;
+		}
+		.container{
+			width: 1400px;
+			margin: 0 auto;
+			position: relative;
+
+		}
+
+		.toptext{
+			font-family: 'Hahmlet-Bold';
+			width: 100vw;
+			height: 80px;
+			position: absolute;
+			color: white;
+			font-size: 32px;
+			
+			top: 40px;
+
+
+
+		}
+
+		.height1{
+			width: 19px;
+			height: 627px;
+			position: absolute;
+			left: 0px;
+			top: 200px;
+			background: white;
+		}
+
+		.height2{
+			width: 19px;
+			height: 627px;
+			position: absolute;
+			left: 1200px;
+			top: 200px;
+			background: #060611;
+			z-index: 10;
+		}
+
+		.width1,.width2,.width3{
+			width: 1500px;
+			height: 197px;
+			background: white;
+			position: absolute;
+			
+			
+
+		}
+
+		marquee{
+			color: #060611;
+			font-size: 140px;
+			line-height: 196px;
+			/*animation: shift 1s infinite linear;*/
+			font-weight: 700;
+			 font-family: 'LeferiPoint-WhiteObliqueA';
+			
+
+
+		}
+
+		.width1{left: 30px; top: 200px;}
+		.width2{left: 30px; top: 415px;}
+		.width3{left: 30px; top: 630px;}
+
+		#widthImg1{		
+			position: absolute;
+			left: 50px;
+			top: 260px;
+			display: none;
+		}
+
+		#widthImg2{		
+			position: absolute;
+			left: 50px;
+			top: 478px;
+			display: none;
+		}		
+
+		#widthImg3{		
+			position: absolute;
+			left: 50px;
+			top: 690px;
+			display: none;
+		}	
+
+		#widthImg1 img, #widthImg2 img, #widthImg3 img{
+			width: 100px;
+		}
+
+		@keyframes shift{
+			from{left: 50px;}
+			to{left: 1200px;}
+
+		}
+
+		.speedvalue{
+			color: white;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			
+
+		}
+
+
+		#introText{
+			font-family: 'Hahmlet-Bold';
+			color: white;
+			text-align: center;
+			padding-top: 280px;
+
+		}
+
+		@keyframes fadeinout{
+			0%{opacity: 0;}
+			20%{opacity: 1;}
+			80%{opacity: 1;}
+			100%{opacity: 0; display: none;}
+		}
+
+		@keyframes fadeout{
+			0%{opacity: 1;}
+			20%{opacity: 1;}
+			80%{opacity: 0;}
+			100%{opacity: 0; display: none;}
+		}
+
+		@keyframes fadein{
+			  from {
+			        opacity: 0;
+			    }
+			    to {
+			        opacity: 1;
+			    }
+		}
+
+		#container2{
+			display: none;
+			position: relative;
+		}
+
+		#subconCH{
+			width: 1200px;
+			height: 300px;
+			margin: 0 auto;
+			padding-top: 350px;
+		}
+
+		#change{
+			width: 1200px;
+			height: 100px;
+			margin: 0 auto;
+   		 	
+		}
+
+		#change1{
+			
+		width: 160px;
+   		 display: block;
+   		 margin: 0px auto;
+   		 padding-top: 140px;
+
+		}
+
+		.chT {
+			font-family: 'Hahmlet-Bold';
+			color: white;
+			text-align: center;
+			padding-top: 80px;		
+			margin: 0px auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="introText"><h2>빠르게 흘러가는 음악은 강렬하죠</h2></div>
+	<div class="speedvalue" id="backvalue">
+		<p style="text-align: center;">음악을 꼭 틀어주세요</p>
+			<audio src="back.mp3" autoplay controls id="back"></audio>
+		</div>
+	<div class="container" id="container1">
+		<div id="toptext" class="toptext">빠르게 흘러가는 음악은 강렬하죠<br>하지만 멈춰서 흐르는 글씨를 보는 것도 재미를 만들어요. 완전히 멈출 수도 있죠.</div>
+		<div class="height1"></div>
+		<div class="height2"></div>
+		<div id="width1" class="width1">
+			<marquee behavior="scroll" direction="left" scrollamount="40"  id="width1T">강렬하고 재밌고 즐겁기도 해요 우리 인생도 그렇잖아요 대부분 빠르고 강렬하고 커다란 인생을 원하죠</marquee>
+
+		</div>
+		<div id="widthImg1"><h1 style="color: white;">멈춤은<h1></div>
+		
+		<div id="width2" class="width2">
+			<marquee behavior="scroll" direction="left" scrollamount="40" id="width2T">빠르고 강렬한 인생은 우리를 자극시키고 더 큰 강렬함을 갈구하게 해요</marquee>
+		</div>
+		<div id="widthImg2"><h1 style="color: white;">늦음이 아닌</h1></div>
+		<div id="width3" class="width3">
+			<marquee behavior="scroll" direction="left" scrollamount="40" id="width3T">이 곡도 빠르지 않나요? 근데.. 당신이 악보 한줄을 완전히 멈춰보셨다면 색다른 소리를 들으셨을 거예요. 그럼 모두 멈추면 어떻게 될까요?</marquee>
+		</div>
+		<div id="widthImg3"><h1 style="color: white;">새로운 발견</h1></div>
+	</div>
+
+	<div class="container" id="container2">
+		<div id="subconCH">
+		<div id="change"><h1 class="chT" id="chT1">음악이 멈췄을 때 당신은 어떤 소리를 들었나요?</h1>
+			<h1 class= "chT" id="chT2">음악이 멈추지 않았다면 들리지 않았을 그 소리처럼<br>때로는 멈출수록 더 많은 것을 보고<br>듣고 생각할 수 있어요</h1>
+		</div>
+			<img id="change1" src="change1.svg">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+	container1.style.display = "none";
+
+	document.onmouseover = function(){
+		introText.style.animation = "fadeout 3s linear";
+		backvalue.style.animation = "fadeout 3s linear";
+	}
+		backvalue.onanimationend = function(){
+			introText.style.display = "none";
+			backvalue.style.display = "none";
+
+			container1.style.display = "block";
+			container1.style.animation = "fadein 2s linear";
+			chT1.style.animation = "fadeout 2s linear";
+			width1T.start();
+			width2T.start();
+			width3T.start();
+		}
+		chT1.onanimationend = function(){
+			chT1.style.display = none;
+			chT2.style.animation = "fadein 2s linear";
+		}
+
+
+
+	let w1 = false;
+	let w2 = false;
+	let w3 = false;
+
+
+	var backAudio = document.getElementById('back');
+
+// onmouseover="this.setAttribute('scrollamount',10,0);" onmouseout="this.setAttribute('scrollamount', 40,0);"
+
+
+	width1T.onmouseover = function(){
+		width1T.stop();
+		width1T.style.color = "#00AD1C";
+		w1 = false;
+	}
+		
+	width1T.onmouseout = function(){
+		width1T.setAttribute('scrollamount','40,0');
+		width1T.style.color = "black";
+		w1 = false;
+		width1T.start();
+
+	}
+
+	width1.onclick = function(){
+		w1 = true;
+		this.remove();
+		back.pause();
+		audioplay1();	
+		judge();
+		widthImg1.style.display = "block";
+		setTimeout(function(){
+			back.play();
+		},4000)		
+	}
+
+	width2T.onmouseover = function(){
+		width2T.style.color = "#F18244";
+		w2 = false;
+		width2T.stop();
+		}
+
+	var widthT2go =	width2T.onmouseout = function(){
+		width2T.style.color = "black";
+		w2 = false;
+		width2T.start();
+	}
+
+
+	width2.onclick = function(){
+		w2 = true;
+		this.remove();
+		back.pause();
+		// audioplay2();
+		judge();
+		widthImg2.style.display = "block";
+		setTimeout(function(){
+			back.play();
+		},4000)	
+	}
+
+	width3T.onmouseover = function(){
+		width3T.style.color = "#8033FF";
+		w3 = false;
+		width3T.stop();
+		}
+
+	var widthT3go =	width3T.onmouseout = function(){
+		width3T.style.color = "black";
+		w3 = false;
+		width3T.start();
+	}
+
+	width3.onclick = function(){
+		w3 = true;
+		this.remove();
+		back.pause();
+		// audioplay3();
+		judge();
+		widthImg3.style.display = "block";
+		setTimeout(function(){
+			back.play();
+		},4000)	
+	}
+	
+
+	function judge(){
+		if(w1 && w2 && w3){
+		setTimeout(function(){
+			back.pause();
+		},4001)
+		setTimeout(function(){
+			container1.style.display = "none";
+			toptext.style.display = "none";	
+			container2.style.display = "block";
+				chT2.style.display = "none";
+			change1.style.animation = "fadein 2s linear";	
+			chT1.style.animation = "fadeinout 8s linear"
+			chT1.onanimationend = function(){
+				 var yourText = prompt("무슨 소리를 들었나요? (어떤 소리든 좋아요)", "");
+				chT1.style.display = "none";
+				chT2.style.display = "block";
+				chT2.style.animation = "fadein 4s linear";
+			}
+			},6000)
+	
+		setTimeout(function(){
+			var audiochange = new Audio('changebgm.mp3')
+			audiochange.play();
+		},10000)
+		
+
+		
+
+		}
+	}
+
+
+	function audioplay1(){
+
+		var audio1 = new Audio('1-4.wav');
+		audio1.play();	
+
+		setTimeout(function(){
+		audio1.pause();
+		},3000);
+	}
+
+	function audioplay2(){
+
+		var audio2 = new Audio('2.mp3');
+		audio2.play();	
+
+		setTimeout(function(){
+		audio2.pause();
+		},3000);
+	}
+
+
+	function audioplay3(){
+
+		var audio3 = new Audio('3.mp3');
+		audio3.play();	
+
+		setTimeout(function(){
+		audio3.pause();
+		},3000);
+	}
+
+	// function onmouseevent1(){
+	// 	width1T.onmouseover = function(){
+	// 	width1T.stop();
+	// }
+		
+	// var widthT1go = width1T.onmouseout = function(){
+	// 	width1T.start();
+	// }
+	// }
+
+
+
+
+
+
+	</script>
+</body>
+</html>
